@@ -1,0 +1,15 @@
+<div>
+  <h1 (click)="toggleTextVisibility()">Klick mich!</h1>
+  <p *ngIf="isTextVisible">Appearing/Disappearing text</p>
+</div>
+<div appFirstWordStyling> Info: Dies ist eine Information.</div>
+<div appFirstWordStyling>Warnung: Achtung, dies ist eine Warnung.</div>
+<div appFirstWordStyling>Fehler: Etwas ist schief gelaufen.</div>
+<form>
+  <label>Name:</label>
+  <input type="text" name ="username" [(ngModel)]="username">
+  <br>
+  <label for="">Alter:</label>
+  <input type="number" name ="userage"[(ngModel)]="userage">
+</form>
+<p>Der Name ist {{username}} und der Alter ist {{userage}}</p>
